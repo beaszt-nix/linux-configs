@@ -1,0 +1,10 @@
+[Unit]
+Description=Wallpaper changer using feh and wal coordination 
+
+[Service]
+Type=oneshot 
+Environment=DISPLAY=:0.0
+User=anjan
+WorkingDirectory=/home/anjan
+ExecStart=/home/anjan/script.sh
+
