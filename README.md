@@ -57,16 +57,16 @@ chsh -s /bin/zsh
 
 # DIRECTORIES & FILE PLACEMENTS
 
-- flash_win.sh \to /home/anjan/flash_win.sh
-- script.sh \to /home/anjan/script.sh
-- wallpaper.service, wallpaper.timer \to /etc/systemd/system/wallpaper.service, wallpaper.timer backup.service/timer \to /etc/systemd/system/backup.service/timer
-- backup.sh \to /home/anjan/backup.sh $(for the systemd service and the cronjob)
+- flash_win.sh ![img](http://bit.ly/2RDr1t6) /home/anjan/flash_win.sh
+- script.sh ![img](http://bit.ly/2RDr1t6) /home/anjan/script.sh
+- wallpaper.service, wallpaper.timer ![img](http://bit.ly/2RDr1t6) /etc/systemd/system/wallpaper.service, wallpaper.timer backup.service/timer ![img](http://bit.ly/2RDr1t6) /etc/systemd/system/backup.service/timer
+- backup.sh ![img](http://bit.ly/2RDr1t6) /home/anjan/backup.sh $(for the systemd service and the cronjob)
 
 ## SETUP the crontab in personal folder
 
-- wallpapers \to /home/anjan/wallpapers
-- music \to /home/anjan/Music/MUSIX/
-- .Xdefaults \to /home/anjan/ ".Xdefaults for urxvt, cause backups are always nice"
+- wallpapers ![img](http://bit.ly/2RDr1t6) /home/anjan/wallpapers
+- music ![img](http://bit.ly/2RDr1t6) /home/anjan/Music/MUSIX/
+- .Xdefaults ![img](http://bit.ly/2RDr1t6) /home/anjan/ ".Xdefaults for urxvt, cause backups are always nice"
 
 # ALIASES FOR THE MAX COMFORT
 ```bash
