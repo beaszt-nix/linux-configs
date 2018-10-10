@@ -81,6 +81,6 @@ alias .. = "cd .."
 alias r = "ranger"
 alias v = "vim"
 alias i3-config = "vim ~/.config/i3/config"
-alias termite-conf = vim /home/anjan/.config/termite/config
+alias termite-conf = "vim /home/anjan/.config/termite/config"
 alias bling = "clear && neofetch --w3m"
 ```
