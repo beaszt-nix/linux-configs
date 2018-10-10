@@ -59,7 +59,9 @@ chsh -s /bin/zsh
 
 - flash_win.sh ![img](http://bit.ly/2RDr1t6) /home/anjan/flash_win.sh
 - script.sh ![img](http://bit.ly/2RDr1t6) /home/anjan/script.sh
-- wallpaper.service, wallpaper.timer ![img](http://bit.ly/2RDr1t6) /etc/systemd/system/wallpaper.service, wallpaper.timer backup.service/timer ![img](http://bit.ly/2RDr1t6) /etc/systemd/system/backup.service/timer
+- wallpaper.service, wallpaper.timer ![img](http://bit.ly/2RDr1t6) /etc/systemd/system/wallpaper.service,
+
+wallpaper.timer backup.service/timer ![img](http://bit.ly/2RDr1t6) /etc/systemd/system/backup.service/timer
 - backup.sh ![img](http://bit.ly/2RDr1t6) /home/anjan/backup.sh $(for the systemd service and the cronjob)
 
 ## SETUP the crontab in personal folder
