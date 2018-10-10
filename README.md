@@ -2,6 +2,7 @@
 
 ## THIS IS A LIST OF PROGRAMS NECESSARY FOR PROPER FUNCTIONING OF THE I3 RICE. DOWNLOAD ALL BEFORE STARTING THE RICE.
 
+![image preview](preview.png)
 ### BEFORE ALL = the username must be anjan.
 
 ### MORE THAN PRIME REQUIREMENT = zsh with oh-my-zsh installed.
