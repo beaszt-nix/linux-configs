@@ -1,0 +1,8 @@
+alias bashconf="nvim ~/.bashrc"
+alias e="exit"
+alias r="ranger"
+alias ..="cd .."
+alias i3-config="nvim ~/.config/i3/config"
+alias gh="cd $HOME"
+alias hask_proj="cdh && cd proj"
+alias tis="cd ~/lang-prac/python/ITSPE/tis"

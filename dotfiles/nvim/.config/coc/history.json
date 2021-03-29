@@ -1,0 +1,23 @@
+{
+  "commands": {
+    "%2Fhome%2Fanjan%2F": {
+      "vim%2Fpack%2Fcoc%2Fstart": [
+        "kjkj",
+        "kjk"
+      ]
+    },
+    "%2Fhome%2Fanjan": [
+      "q?"
+    ]
+  },
+  "diagnostics": {
+    "%2Fhome%2Fanjan": [
+      "?o"
+    ]
+  },
+  "symbols": {
+    "%2Fhome%2Fanjan": [
+      "idi s"
+    ]
+  }
+}

@@ -1,8 +1,0 @@
-[Unit]
-Description=runs backup script every week
-
-[Service]
-Type=simple
-User=anjan
-WorkingDirectory=/home/anjan
-ExecStart=/home/anjan/backup_support.sh

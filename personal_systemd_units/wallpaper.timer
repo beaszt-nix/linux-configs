@@ -1,8 +1,0 @@
-[Unit]
-Description=Execs wallpaper service every 15 minutes
-[Timer]
-OnActiveSec=5sec
-OnBootSec=150
-OnUnitActiveSec=10min
-[Install]
-WantedBy=timers.target
