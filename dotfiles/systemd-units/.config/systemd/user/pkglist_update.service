@@ -1,0 +1,12 @@
+[Unit]
+Description=Updates Installed Packages List Daily
+Wants=pkglist_update.timer
+
+[Service]
+Type=oneshot
+User=anjan
+WorkingDirectory=WORK_DIR
+ExecStart=bash update_pkg_list.sh 
+
+[Install]
+WantedBy=multi-user.target

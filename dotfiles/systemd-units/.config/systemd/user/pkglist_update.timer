@@ -1,0 +1,10 @@
+[Unit]
+Description=Updates Installed Package Lists Daily
+Requires=pkglist_update.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

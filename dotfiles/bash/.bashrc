@@ -2,6 +2,8 @@ if [ -f ~/.bash_aliases ]; then
     .    ~/.bash_aliases;
 fi
 
+set -o vi
+
 function rdpdf() {
     evince "$*" &
 }
@@ -33,7 +35,7 @@ function tex-compile() {
 }
 
 shopt -s autocd
-export PS1="\u@\H \w:-\[$(tput sgr0)\]"
+export PS1="\u@\h \W: \[$(tput sgr0)\]"
 export -f tex-compile
 
 (cat ~/.cache/wal/sequences &)
@@ -46,3 +48,8 @@ export PATH="$PATH:/home/anjan/.local/bin"
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export EDITOR=/usr/bin/nvim
+export TERM='xterm-256color'
+
+source /usr/share/fzf/completion.bash && source /usr/share/fzf/key-bindings.bash
+complete -o bashdefault -o default -F _fzf_path_completion zathura

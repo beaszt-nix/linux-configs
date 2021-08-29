@@ -25,13 +25,13 @@ font pango:Inconsolata 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec "rofi -modi run,drun -show drun -font 'IBM Plex Sans SemiBold 18' -show-icons -columns 3 -lines 10 -padding 20 -color-window '#330b0d13, #330b0d13, #000b0d13' -color-normal '#440b0d13, #e6e6e6, #440b0d13, #880b0d13, #e6e6e6' -display-drun 'Select Program'"
+bindsym $mod+d exec "rofi -modi run,drun -show drun -font 'IBM Plex Sans SemiBold 18' -fullscreen -show-icons -columns 3 -lines 10 -padding 20 -color-window '#330b0d13, #330b0d13, #000b0d13' -color-normal '#440b0d13, #e6e6e6, #440b0d13, #880b0d13, #e6e6e6' -display-drun 'Select Program'"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -40,9 +40,11 @@ bindsym $mod+d exec "rofi -modi run,drun -show drun -font 'IBM Plex Sans SemiBol
 exec_always --no-startup-id wal -R
 exec --no-startup-id mpd
 exec --no-startup-id mpc pause
-exec --no-startup-id blueman-applet
-exec --no-startup-id nm-applet 
 exec --no-startup-id "xset r rate 250 60"
+exec --no-startup-id /usr/lib/kdeconnectd
+exec --no-startup-id kdeconnect-indicator
+exec --no-startup-id "dunst -config /home/anjan/.config/dunst/dunstrc"
+#exec --no-startup-id qjackctl
 
 for_window [class="^.*"] border pixel 0
 # change focus
@@ -164,7 +166,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-#exec_always --no-startup-id "/home/anjan/.config/polybar/polybar.sh"
+exec_always --no-startup-id "/home/anjan/.config/polybar/polybar.sh"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -219,19 +221,21 @@ exec --no-startup-id "xbacklight -set 20"
 exec --no-startup-id "picom -b --config ~/picom.conf"
 exec --no-startup-id "xmodmap -e 'keycode 108 = Alt_L'"
 exec --no-startup-id "xrandr --output HDMI-1 --scale 1.23x1.23"
+exec --no-startup-id "nm-applet"
 
 #PERSONAL BINDSYMS
+bindsym $mod+Shift+y exec /home/anjan/.config/scripts/youtube_launch.sh
 bindsym $mod+Shift+n exec /home/anjan/unused_ip.sh
 bindsym $mod+t gaps inner all set 0; gaps outer all set 0
 bindsym $mod+Shift+t gaps inner all set 8; gaps inner all set 8 
 bindsym $mod+BackSpace exec $flash
 bindsym $mod+Shift+BackSpace exec systemctl reboot 
 bindsym XF86Mail exec "qutebrowser mail.google.com"
-bindsym XF86HomePage exec "termite -e "neofetch --w3m && ranger""
+bindsym XF86HomePage exec "alacritty -e "neofetch --w3m && ranger""
 #bindsym XF86Calculator exec speedcrunch
-#bindcode 115 exec "pactl set-sink-volume 0 -5%"
-#bindcode 114 exec "pactl set-sink-volume 0 +5%"
-#bindcode 113  exec "pactl set-sink-volume 0 0%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 0 -5% ; pkill RTMIN+1 i3blocks"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 0 +5% ; pkill RTMIN+1 i3blocks"
+
 bindsym $mod+Shift+h exec /home/anjan/.config/scripts/man_menu
 
 bindsym $mod+b border toggle
@@ -239,8 +243,8 @@ bindsym Shift+XF86AudioMute exec "pactl set-sink-volume 0 100%"
 bindsym $mod+Shift+s exec "systemctl poweroff"
 bindsym $mod+Shift+i exec brave-browser
 bindsym $mod+m exec /home/anjan/.config/scripts/mpd_sh.sh
-bindsym XF86AudioPlay exec termite -e cmus;exec termite -e vis
-bindsym $mod+Shift+a exec termite -e alsamixer
+bindsym XF86AudioPlay exec alacritty -e cmus;exec alacritty -e vis
+bindsym $mod+Shift+a exec alacritty -e alsamixer
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 

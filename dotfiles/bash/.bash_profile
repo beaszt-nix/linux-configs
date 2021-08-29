@@ -5,6 +5,11 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];
+then 
+  startx
+fi
+
 # User specific environment and startup programs
 
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -22,4 +27,3 @@ export BROWSER="brave-browser"
 export ANDROID_SDK=/home/anjan/Android/Sdk
 export DOCKER_HOST='unix://var/run/docker.sock'
 export MYSQL_ROOTPASS='makolo123'
-export EDITOR=nvim

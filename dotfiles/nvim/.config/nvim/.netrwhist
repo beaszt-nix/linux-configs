@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/anjan/lang-prac/haskell/hslisp/src'
+let g:netrw_dirhist_7='/home/anjan/lang-prac/haskell/hslisp'
+let g:netrw_dirhist_6='/home/anjan/.config/i3'
+let g:netrw_dirhist_5='/home/anjan/lang-prac/python/ITSPE/block_optimization'
+let g:netrw_dirhist_4='/home/anjan/lang-prac/python/ITSPE/tis/background/PT'
+let g:netrw_dirhist_3='/home/anjan/.config/nvim'
+let g:netrw_dirhist_2='/home/anjan/.config/ranger'
+let g:netrw_dirhist_1='/usr/share/xsessions'

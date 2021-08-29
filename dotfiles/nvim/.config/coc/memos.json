@@ -945,5 +945,8 @@
       "type": "Unknown",
       "displayName": "Python 3.8.3 64-bit"
     }
+  },
+  "coc-eslint|global": {
+    "eslintAlwaysAllowExecution": true
   }
 }

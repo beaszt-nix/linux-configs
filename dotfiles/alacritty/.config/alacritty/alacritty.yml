@@ -1,0 +1,16 @@
+font: 
+  normal:
+    family: IBM Plex Mono
+    style: Regular
+  bold:
+    family: IBM Plex Mono
+    style: SemiBold
+  italic:
+    family: IBM Plex Mono
+    style: Medium Italic
+  bold_italic:
+    family: IBM Plex Mono
+    style: SemiBold Italic
+  size: 12
+
+background_opacity: 0.7
