@@ -1,3 +1,7 @@
+shell:
+  program: /bin/bash
+  args: 
+      - --login
 font: 
   normal:
     family: IBM Plex Mono
@@ -13,4 +17,5 @@ font:
     style: SemiBold Italic
   size: 12
 
-background_opacity: 0.7
+window:
+  opacity: 0.7

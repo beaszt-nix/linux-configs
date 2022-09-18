@@ -45,8 +45,6 @@ clear
 
 # Created by `userpath` on 2020-02-01 06:38:23
 export PATH="$PATH:/home/anjan/.local/bin"
-
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export EDITOR=/usr/bin/nvim
 export TERM='xterm-256color'
